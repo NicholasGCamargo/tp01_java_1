@@ -14,6 +14,30 @@ public class Pessoa {
     protected String sobrenome;
     protected String ultimoNome;
     
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setNome(String value){
+        nome = value;
+    }
+        
+    public String getSobrenome(){
+        return sobrenome;
+    }
+    
+    public void setSobrenome(String value){
+        sobrenome = value;
+    }
+        
+    public String getUltimoNome(){
+        return ultimoNome;
+    }
+    
+    public void setUltimoNome(String value){
+        ultimoNome = value;
+    }
+    
     public Pessoa(String nomeCompleto){
         try{
             

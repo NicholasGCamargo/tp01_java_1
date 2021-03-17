@@ -12,6 +12,14 @@ package tp01_nicholas_camargo.classes;
 public class Professor extends Pessoa{
     private String disciplina;
     
+    public void setDisciplina(String value){
+        disciplina = value;
+    }
+    
+    public String getDisciplina(){
+        return disciplina;
+    }
+    
     public Professor(String nome) {
         super(nome);
         disciplina = "Sem mestrar aulas atualmente";
