@@ -113,9 +113,12 @@ public class TP01_Nicholas_Camargo {
                 pessoas[i] = new Aluno(nome, valNota1, valNota2);
                 i++;
                 System.out.println("Aluno inserido na posição: " + i);
-            }catch(Exception e){
+            }catch(NumberFormatException e){
                 System.out.println("Erro ao criar aluno com notas.");
                 System.out.println(e.getMessage());
+            }finally{
+                System.out.println("Saindo sem criar aluno.");
+                return;
             }
         }
     }
